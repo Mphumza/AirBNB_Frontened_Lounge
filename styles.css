@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,600&display=swap');
+
+:root{
+    --primary-color: #da1657;
+    --primary-color-dark: #c9134f;
+    --text-dark: #0c0a09;
+    --text-light: #78716c;
+    --white: #ffffff;
+    --max-width:1200px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.section__container{
+max-width: var(--max-width);
+margin:auto;
+padding: 5rem 1rem;
+}
+
+.section__subheader{
+    margin-bottom: 0.5rem;
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--text-dark);
+}
+
+.section__subheader ::after{
+   position: absolute; 
+   content:"";
+   top: 50%;
+   transform: translate(1rem, -50%);
+   height: 2px;
+   width: 4rem;
+   background-color:var(--primary-color);
+}
+img {
+ max-width:330px;
+ max-height: 330px;
+ display:flex;
+ 
+}
+.section__header{ 
+ max-width: 400px;
+ margin-bottom: 1rem;
+ font-size: 2.5rem;
+ font-weight: 600;
+ line-height: 3rem;
+ color: var(--text-dark);
+}
+
+.section_description {
+    max-width: 600px;
+    margin-bottom: 1rem;
+    color: var(--text-light);   
+}
+.btn{
+    padding: .75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500px;
+    color: var(--white);
+    background-color: var(--text-light);
+    border-radius: 6px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: blueviolet;
+}
+body{
+     font-family: 'Lora', serif;
+}
+a {
+   text-decoration: none;
+}
+
+.logo{
+    max-width:80px;   
+}
+ .room_card_icons span:nth-child(1){
+    color:rgb(202, 159, 102)
+
+ }
+ .room_card_icons span:nth-child(2){
+    color:rgb(226, 130, 4)
+    
+ }
+ .room_card_icons span:nth-child(1){
+    color:rgb(75, 50, 18)
+    
+ }
+.Header {
+    height: 80vh; 
+    background-image: url("assets/chillaz.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;
+    isolation: isolate;
+    top: 0;
+    width: 200%;
+    max-width: var(--max-width);
+    margin: auto;
+    z-index: 9;
+}
+.nav_bar{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    background-color: var(--text-light);
+}
+.nav_menu_btn {
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(188, 28, 92, 0.9);
+    transform: translateY(-100%);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.nav_links.open {
+  transform: translateY(0);
+}
+
+.nav_btn{
+    display:none;
+}
+.header_container{
+    padding-block: 10rem 15rem;
+    text-align: center;
+}
+
+.header_container p {
+    margin-bottom: 1rem; 
+    font-size: 1.2rem;
+    color:var(--white);
+    /*text-align: center;*/
+    opacity: 0.6;
+}
+.header_container h1 {
+  font-size: 4rem;
+  font-size: 500;
+  line-height: 4.rem;
+  color: var(--white);
+  /*text-align: center;*/
+}
+.header_container h1 span {
+color:purple;
+}
+.booking_container{
+    padding-block: 0;
+}
+
+.booking_form{
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    background-color: var(--white);
+    border-radius: 10px;
+    transform: translateY(-50%);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+}
+.input_group{
+    flex: 1 1 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+h1{
+  padding-inline-start: 35%;
+  position: unset;
+  margin-top: -12px;
+}
+p{
+    margin-bottom:0%;
+    padding-inline-start: 43%;
+}
+.input_group span {
+    font-size: 1.7rem;
+    color: purple
+
+}
+.about_container{
+    overflow: hidden;
+    display: grid;
+    gap: 2rem;
+}
+.room_card_details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (far left) */
+}
+
+.room_card_image img {
+    width: 55%; /* Make the image take up the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.room_card_icons {
+    margin-top: 10px; /* Add some space between the image and the icons */
+}
+
+.room_card_icons span {
+    margin-right: 10px; /* Add some space between the icons */
+    font-size: 1.5em;
+}
+.about_image_img{
+    max-width: 450px;
+    margin:auto;
+    border-radius: 5px;
+
+}
+.input_group label{
+    font-weight: 500;
+    color: var(--text-dark)
+}
+.input_group input{
+    display:block;
+    width: 100%;
+    max-width: 150px;
+    padding-block: 5px;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    outline: none;
+    border:none;
+}
+.input_group input ::placeholder {
+    color: var(--text-light)
+}
+@media (width > 768px){
+    nav{
+        padding: 2rem 1rem;
+        position:static;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav_bar{
+        padding: 0;
+        background: transparent;
+    }
+
+    .nav_menu_btn {
+        display: none;
+    }
+
+    .nav_links{
+        padding: 0;
+        width: unset;
+        position: static;
+        transform: none;
+        flex-direction:row;
+        background-color: transparent;
+    }
+    .nav_btn{
+        display:block;
+    }
+     .nav_links a::after{
+        position:absolute;
+        content:"";
+        left:0;
+        bottom:0;
+        height:2px;
+        width:0;
+        background-color:var(--text-light);
+        transition: 0.3s;
+        transform-origin: left;
+     }
+
+     .nav_links a:hover::after {
+        width:100%;
+     }    
+     .about_container{
+        grid-template-columns: repeat(2,1fr);
+        align-items:center;
+     }
+}
