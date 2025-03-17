@@ -16,7 +16,7 @@ Clone the repository:
 sh
 Copy
 Edit
-git clone https://github.com/yourusername/hotel-responsive.git
+git clone https://github.com/Mphumza/AirBNB-Frontened_Lounge.git
 cd hotel-responsive
 Open index.html in any web browser.
 🚀 Future Enhancements
